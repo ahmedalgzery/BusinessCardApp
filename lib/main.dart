@@ -95,13 +95,20 @@ class BusinessCardApp extends StatelessWidget {
                   },
                   child: Row(
                     children: const [
-                      Icon(Icons.call),
+                      Padding(
+                        padding: EdgeInsets.only(left: 6.0, right: 6.0),
+                        child: Icon(
+                          Icons.call,
+                          size: 28.0,
+                        ),
+                      ),
                       SizedBox(
                         width: 20.0,
                       ),
                       Text(
                         'Call Now',
                         style: TextStyle(
+                          fontWeight: FontWeight.bold,
                           fontSize: 20.0,
                           color: Color.fromARGB(255, 10, 38, 71),
                         ),
@@ -132,7 +139,13 @@ class BusinessCardApp extends StatelessWidget {
                   },
                   child: Row(
                     children: const [
-                      Icon(Icons.mail),
+                      Padding(
+                        padding: EdgeInsets.only(left: 6.0, right: 6.0),
+                        child: Icon(
+                          Icons.mail,
+                          size: 28.0,
+                        ),
+                      ),
                       SizedBox(
                         width: 20.0,
                       ),
@@ -140,6 +153,7 @@ class BusinessCardApp extends StatelessWidget {
                         'Send Email',
                         style: TextStyle(
                           fontSize: 20.0,
+                          fontWeight: FontWeight.bold,
                           color: Color.fromARGB(255, 10, 38, 71),
                         ),
                       ),
@@ -183,6 +197,7 @@ class BusinessCardApp extends StatelessWidget {
                         'LinkedIn ',
                         style: TextStyle(
                           fontSize: 20.0,
+                          fontWeight: FontWeight.bold,
                           color: Color.fromARGB(255, 10, 38, 71),
                         ),
                       ),
@@ -226,6 +241,7 @@ class BusinessCardApp extends StatelessWidget {
                       Text(
                         'Facebook',
                         style: TextStyle(
+                          fontWeight: FontWeight.bold,
                           fontSize: 20.0,
                           color: Color.fromARGB(255, 10, 38, 71),
                         ),
@@ -258,6 +274,7 @@ class BusinessCardApp extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: const [
                       CircleAvatar(
+                        backgroundColor: Colors.white,
                         radius: 22.0,
                         backgroundImage: AssetImage('assets/images/github.png'),
                       ),
@@ -268,6 +285,7 @@ class BusinessCardApp extends StatelessWidget {
                       Text(
                         'GitHub',
                         style: TextStyle(
+                          fontWeight: FontWeight.bold,
                           fontSize: 20.0,
                           color: Color.fromARGB(255, 10, 38, 71),
                         ),
